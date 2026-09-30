@@ -1,0 +1,41 @@
+[
+  {
+    "id": "hoyalytics",
+    "name": "HoyAlytics",
+    "organizationGroup": "MSB Undergraduate Group",
+    "description": "As the business world increasingly leverages data, HoyAlytics aims to help undergraduates build data knowledge beyond the introduction to data analysis offered by the undergraduate program. The club provides data analytics information and demonstrations for fellow Hoyas, while creating networking opportunities and career outreach with MBA students and leading executives.",
+    "email": "hoyalytics-ug@georgetown.edu",
+    "website": "https://www.hoyalytics.com/",
+    "logo": "images/hoyalytics-logo.png",
+    "entryDifficulty": 3,
+    "accessTypes": ["open", "application"],
+    "applicationDeadline": "2026-09-14",
+    "applicationSize": "Medium",
+    "tags": ["Leadership", "Academic", "Pre-Professional", "Special Interest"]
+  },
+  {
+    "id": "hilltop",
+    "name": "Hilltop Consultants",
+    "organizationGroup": "MSB Undergraduate Group",
+    "description": "To deliver high-impact solutions to nonprofit organizations while developing future leaders by offering hands-on consulting experience and professional training.",
+    "email": "hilltopconsultants@georgetown.edu",
+    "website": "https://www.hilltopconsultants.org/",
+    "logo": "images/hilltop-consultants-logo.png",
+    "entryDifficulty": 2,
+    "accessTypes": ["application"],
+    "applicationDeadline": "2026-09-13",
+    "applicationSize": "Large",
+    "tags": ["Leadership", "Academic", "Pre-Professional", "Service and Social Justice"]
+  },
+  {
+    "id": "gugs",
+    "name": "Georgetown University Grilling Society",
+    "organizationGroup": "SAC Group",
+    "description": "The Georgetown University Grilling Society, or simply GUGS (the first \"g\" is soft, as in \"genius\") was founded in the Summer of 2002 with a few simple goals in mind, to create an organization attractive to Georgetown students who:\n- love to grill\n- love to cook and eat good food\n- want to meet new and exciting people\n- want to learn more about the art of grilling\n- want to share their knowledge of grilling with others\n- want to be a part of a special Georgetown tradition\n- want to have a good time\n",
+    "email": "gugs@georgetown.edu",
+    "entryDifficulty": 5,
+    "accessTypes": ["open"],
+    "logo": "images/grilling-society-logo.png",
+    "tags": ["Special Interest", "Recreational"]
+  }
+]
