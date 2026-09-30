@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#041e42" />
+    <meta name="description" content="Explore Georgetown student organizations and find a community that fits you." />
+    <title>HoyaClubs — Georgetown club culture, made simpler</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <script defer src="scripts/main.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="HoyaClubs home"><span class="brand-mark">H</span><span>Hoya<span class="brand-light">Clubs</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-active" href="#directory">Explore clubs</a>
+        <a href="#how-it-works">How it works</a>
+        <a href="#suggestion-form">Provide club details</a>
+      </nav>
+      <a class="contribute-link" href="#how-it-works">Get help <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="hero-inner">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Georgetown club culture, made simpler</p>
+            <h1>Your people<br />are  <em>  out there.</em></h1>
+            <p class="hero-description">Find the clubs you actually want to join, and get the real information you need.</p>
+            <a class="hero-cta" href="#directory">Explore the directory <span aria-hidden="true">↓</span></a>
+            <div class="hero-note"><span class="note-icon">✦</span>  Find your next thing, all in one place.</div>
+          </div>
+          <div class="hero-art" aria-hidden="true">
+            <div class="art-orbit orbit-one"></div><div class="art-orbit orbit-two"></div>
+            <div class="art-card art-card-main"><img class="art-symbol" src="images/jack-the-bulldog.png" alt="Jack the Bulldog, Georgetown's mascot" /></div>
+            <div class="art-card art-card-small"><span class="mini-spark">✳</span><span>Crowd sourced<br /><strong>Honest Opinions</strong></span></div>
+            <div class="art-dot dot-one"></div><div class="art-dot dot-two"></div>
+            <span class="art-label">HILLTOP · DC</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="directory-section" id="directory">
+        <div class="section-heading">
+          <div><p class="section-kicker">GET THE REAL VIBE OF THE CLUB SCENE</p><h2>Find your <span>kind of club.</span></h2></div>
+          <p class="section-intro">Start with a general body meeting, explore what fits your interests and your schedule.</p>
+        </div>
+        <div class="search-panel">
+          <label class="search-box"><span class="search-icon" aria-hidden="true">⌕</span><span class="sr-only">Search clubs or interests</span><input id="club-search" type="search" placeholder="Try “service,” “arts,” or a club name" autocomplete="off" /><kbd id="search-shortcut">Ctrl K</kbd></label>
+          <div class="filters" role="group" aria-label="Filter clubs by category">
+            <button class="filter-chip active" data-filter="all" type="button">All clubs <span id="all-clubs-count">00</span></button>
+            <button class="filter-chip" data-filter="leadership" type="button">Leadership</button>
+            <button class="filter-chip" data-filter="academic" type="button">Academic</button>
+            <button class="filter-chip" data-filter="pre-professional" type="button">Pre-Professional</button>
+            <button class="filter-chip" data-filter="special-interest" type="button">Special Interest</button>
+            <button class="filter-chip" data-filter="service-and-social-justice" type="button">Service and Social Justice</button>
+          </div>
+        </div>
+        <div class="results-row"><p><strong id="result-count">Loading clubs…</strong> <span>in the directory</span></p></div>
+        <div class="club-grid" id="club-grid" aria-live="polite" aria-busy="true"></div>
+        <p class="directory-error" id="directory-error" role="alert" hidden></p>
+        <p class="empty-state" id="empty-state" hidden>No clubs match that search yet. Try another interest or category.</p>
+        <div class="browse-more"><span>Club information is added as it’s shared and reviewed.</span><a href="#suggestion-form">Suggest a club or update <span aria-hidden="true">↗</span></a></div>
+      </section>
+
+      <section class="how-section" id="how-it-works">
+        <div class="how-heading"><div><p class="section-kicker">BUILT BY HOYAS, FOR HOYAS</p><h2>Good info comes <span>from the community.</span></h2></div><p>HoyaClubs is an independent, community-sourced guide to student organizations. Members and students help make each listing more useful.</p></div>
+        <div class="how-steps">
+          <article class="how-step"><span class="step-number">01</span><h3>Students share what they know</h3><p>Club members and students can contribute club details, application tips, and corrections based on their experience.</p></article>
+          <article class="how-step"><span class="step-number">02</span><h3>Every update is reviewed</h3><p>Submissions are reviewed before they appear in the directory. Listings include a review date to help you judge how current they are.</p></article>
+          <article class="how-step"><span class="step-number">03</span><h3>Use it as a starting point</h3><p>Information may be incomplete, subjective, or out of date. Confirm application details and requirements directly with the club.</p></article>
+        </div>
+        <div class="how-cta" id="share-info"><div><strong>Know something that could help?</strong><span>Share a club, suggest a correction, or pass along application advice.</span></div><a class="contribute-button" href="#suggestion-form">Share club info <span aria-hidden="true">↓</span></a></div>
+      </section>
+
+      <section class="submission-section" id="suggestion-form">
+        <div class="submission-copy"><p class="section-kicker">HELP KEEP THE DIRECTORY USEFUL</p><h2>Share what <span>you know.</span></h2><p>Suggest a new club or send an update for a listing. Add a source or context if you can; it helps with review.</p><div class="form-notice"><strong>Submissions are not connected yet.</strong><span>This form is a preview. It won’t send or save your information until a submission service is connected.</span></div></div>
+        <form class="club-suggestion-form">
+          <label>What would you like to do?<select name="requestType"><option>Add a club</option><option>Update a club</option><option>Share application advice</option><option>Report outdated information</option></select></label>
+          <label>Club name<input name="clubName" type="text" placeholder="Name of the club" /></label>
+          <label>What should we know?<textarea name="details" rows="4" placeholder="Share details, corrections, or application tips"></textarea></label>
+          <div class="form-row"><label>Source or context <span class="optional">(optional)</span><input name="source" type="text" placeholder="Link or where you learned this" /></label><label>Your email <span class="optional">(optional)</span><input name="email" type="email" placeholder="For follow-up questions" /></label></div>
+          <button class="submit-suggestion" type="button" disabled>Submissions opening soon</button>
+        </form>
+      </section>
+    </main>
+    <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">H</span><span>Hoya<span class="brand-light">Clubs</span></span></a><p>An independent guide to finding your place on the Hilltop.</p><span class="footer-campus">WASHINGTON, DC · EST. BY STUDENTS</span></footer>
+  </body>
+</html>

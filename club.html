@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#041e42" />
+    <title>Club profile — HoyaClubs</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link href="styles/style.css" rel="stylesheet" />
+    <script defer src="scripts/club.js"></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <a class="brand" href="index.html#top" aria-label="HoyaClubs home"><span class="brand-mark">H</span><span>Hoya<span class="brand-light">Clubs</span></span></a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a class="nav-active" href="index.html#directory">Explore clubs</a>
+        <a href="index.html#how-it-works">How it works</a>
+        <a href="index.html#suggestion-form">Provide club details</a>
+      </nav>
+      <a class="contribute-link" href="index.html#how-it-works">Get help <span aria-hidden="true">↗</span></a>
+    </header>
+    <main id="main" class="profile-page">
+      <div class="profile-wrap">
+        <p class="profile-loading" id="profile-loading" aria-live="polite">Loading club profile…</p>
+        <p class="profile-error" id="profile-error" role="alert" hidden></p>
+        <article id="club-profile" hidden>
+          <div class="profile-banner-row">
+            <a class="back-link" href="index.html#directory"><span aria-hidden="true">←</span> All clubs</a>
+            <section class="profile-hero">
+              <p class="profile-eyebrow" id="profile-group"></p>
+              <h1 id="profile-name"></h1>
+              <div class="profile-tags" id="profile-tags"></div>
+            </section>
+          </div>
+          <div class="profile-layout">
+            <div class="profile-main-column">
+              <section class="profile-panel">
+                <p class="section-kicker">ABOUT THE CLUB</p>
+                <p class="profile-description" id="profile-description"></p>
+              </section>
+              <section class="profile-panel profile-details-panel">
+                <p class="section-kicker">AT A GLANCE</p>
+                <dl class="profile-details" id="profile-details"></dl>
+              </section>
+              <section class="profile-panel application-panel" id="application-panel" hidden>
+                <p class="section-kicker">APPLICATION & JOINING</p>
+                <p id="application-process"></p>
+                <div id="application-questions" hidden><h2>Sample questions</h2><ul></ul></div>
+              </section>
+            </div>
+            <div class="profile-aside-column">
+              <section class="profile-logo-panel" id="club-logo-panel" hidden>
+                <img id="club-logo" alt="" />
+              </section>
+              <aside class="profile-aside">
+                <p class="section-kicker">HELP COMPLETE THIS PROFILE</p>
+                <h2>Know more?</h2>
+                <p>Share a detail, correction, or application tip to help make this profile more useful.</p>
+                <a class="contribute-button" href="index.html#suggestion-form">Suggest an update <span aria-hidden="true">↗</span></a>
+                <p class="profile-disclaimer">Information is community-sourced and may be incomplete or out of date. Confirm details directly with the club.</p>
+              </aside>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer"><a class="brand footer-brand" href="index.html#top"><span class="brand-mark">H</span><span>Hoya<span class="brand-light">Clubs</span></span></a><p>An independent guide to finding your place on the Hilltop.</p><span class="footer-campus">WASHINGTON, DC · EST. BY STUDENTS</span></footer>
+  </body>
+</html>
